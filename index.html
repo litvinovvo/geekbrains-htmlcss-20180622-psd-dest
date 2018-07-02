@@ -21,33 +21,37 @@
 <body class="page">
 	<div class="header">
 		<div class="container">
-			<div class="header__logo logo">
-				<a href="index.html" class="logo__link">
-					<img src="img/logo.png" class="logo__img" />
-				</a>
-			</div>
-			<div class="header__menu menu">
-				<ul class="menu__list">
-					<li class="menu__item menu__item--active">
-						<a href="#" class="menu__link menu__link--active">home</a>
-					</li>
-					<li class="menu__item">
-						<a href="catalog.html" title="products" class="menu__link">products</a>
-					</li>
-					<li class="menu__item">
-						<a href="catalog/product.html" title="history" class="menu__link">history</a>
-					</li>
-					<li class="menu__item">
-						<a href="catalog/product.html" title="showroom" class="menu__link">showroom</a>
-					</li>
-					<li class="menu__item">
-						<a href="catalog/product.html" title="contact" class="menu__link">contact</a>
-					</li>
-				</ul>
-				<div class="menu__search">
-					<a href="#" class="menu__svg-icon-search">
-						<svg width="23" height="23" class="svg--overflow"><use xlink:href="assets/images/icon.svg#icon_search" class="svg-icon-search"></use></svg>
-					</a>
+			<div class="section-container">
+				<div class="row">
+					<div class="header__logo logo col-lg-5">
+						<a href="index.html" class="logo__link">
+							<img src="img/logo.png" class="logo__img img-fluid" />
+						</a>
+					</div>
+					<div class="header__menu menu col-lg-7">
+						<ul class="menu__list">
+							<li class="menu__item menu__item--active">
+								<a href="#" class="menu__link menu__link--active">home</a>
+							</li>
+							<li class="menu__item">
+								<a href="catalog.html" title="products" class="menu__link">products</a>
+							</li>
+							<li class="menu__item">
+								<a href="catalog/product.html" title="history" class="menu__link">history</a>
+							</li>
+							<li class="menu__item">
+								<a href="catalog/product.html" title="showroom" class="menu__link">showroom</a>
+							</li>
+							<li class="menu__item">
+								<a href="catalog/product.html" title="contact" class="menu__link">contact</a>
+							</li>
+							<li class="menu__search">
+								<a href="#" class="menu__svg-icon-search">
+									<svg width="23" height="23" class="svg--overflow"><use xlink:href="assets/images/icon.svg#icon_search" class="svg-icon-search"></use></svg>
+								</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -55,16 +59,20 @@
 	<div class="container">
 		<div class="slider">
 			<div class="slider__slides">
-				<div class="slider__slide slide">
-					<img src="img/slider-img1.jpg" class="slide__img" />
-					<div class="slide__text">
-						<div class="slide__tag">Trending</div>
-						<div class="slide__title">Fishnet Chair</div>
-						<div class="slide__details">Seat and back with upholstery made of cold cure foam. Steel frame,
-							<br>available in matt powder-coated black</div>
-						<a role="button" class="btn" href="#">Order Us
-							<svg width="21" height="21" class="btn__icon"><use xlink:href="assets/images/icon.svg#icon_cheveron-right" class="svg-icon-search"></use></svg>
-						</a>
+				<div class="slider__slide slide row">
+					<div style="background-image: url(img/slider-img1.jpg);" class="slide__img-container">
+						<img src="img/slider-img1.jpg" class="slide__img img-fluid" />
+					</div>
+					<div class="slide__text col-md-12">
+						<div class="section-container">
+							<div class="slide__tag">Trending</div>
+							<div class="slide__title">Fishnet Chair</div>
+							<div class="slide__details">Seat and back with upholstery made of cold cure foam. Steel frame,
+								<br>available in matt powder-coated black</div>
+							<a role="button" class="btn" href="#">Order Us
+								<svg width="21" height="21" class="btn__icon"><use xlink:href="assets/images/icon.svg#icon_cheveron-right" class="svg-icon-search"></use></svg>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -82,7 +90,7 @@
 		</div>
 	</div>
 	<div class="container">
-		<div class="featured-product">
+		<div class="featured-product section-container">
 			<div class="featured-product__header">
 				<ul class="featured-product__tab-control tab-control">
 					<li class="tab-control__item tab-control__item--active">
@@ -99,64 +107,72 @@
 				</div>
 			</div>
 			<div class="featured-product__tabs">
-				<div class="featured-product__tab tab">
-					<div class="tab-item">
-						<img src="img/product-1.jpg" class="tab-item__img" />
-						<div class="tab-item__hover">
-							<div class="tab-item__back">
-								<div class="tab-item__btn">
-									<a role="button" class="btn btn--icon">
-										<svg width="35" height="35" class="btn__icon"><use xlink:href="assets/images/icon.svg#icon_cheveron-right" class="svg-icon-search"></use></svg>
-									</a>
+				<div class="featured-product__tab tab row">
+					<div class="tab-item col-md-6 col-xl-3">
+						<div class="tab-item__img-container">
+							<img src="img/product-1.jpg" class="tab-item__img img-fluid" />
+							<div class="tab-item__hover">
+								<div class="tab-item__back">
+									<div class="tab-item__btn">
+										<a role="button" class="btn btn--icon">
+											<svg width="35" height="35" class="btn__icon"><use xlink:href="assets/images/icon.svg#icon_cheveron-right" class="svg-icon-search"></use></svg>
+										</a>
+									</div>
+									<div class="tab-item__title">Fishnet Chair</div>
+									<div class="tab-item__details">Seat and back with upholstery
+										<br>made of cold cure foam</div>
 								</div>
-								<div class="tab-item__title">Fishnet Chair</div>
-								<div class="tab-item__details">Seat and back with upholstery
-									<br>made of cold cure foam</div>
 							</div>
 						</div>
 					</div>
-					<div class="tab-item">
-						<img src="img/product-2.jpg" class="tab-item__img" />
-						<div class="tab-item__hover">
-							<div class="tab-item__back">
-								<div class="tab-item__btn">
-									<a role="button" class="btn btn--icon">
-										<svg width="35" height="35" class="btn__icon"><use xlink:href="assets/images/icon.svg#icon_cheveron-right" class="svg-icon-search"></use></svg>
-									</a>
+					<div class="tab-item col-md-6 col-xl-3">
+						<div class="tab-item__img-container">
+							<img src="img/product-2.jpg" class="tab-item__img img-fluid" />
+							<div class="tab-item__hover">
+								<div class="tab-item__back">
+									<div class="tab-item__btn">
+										<a role="button" class="btn btn--icon">
+											<svg width="35" height="35" class="btn__icon"><use xlink:href="assets/images/icon.svg#icon_cheveron-right" class="svg-icon-search"></use></svg>
+										</a>
+									</div>
+									<div class="tab-item__title">Fishnet Chair</div>
+									<div class="tab-item__details">Seat and back with upholstery
+										<br>made of cold cure foam </div>
 								</div>
-								<div class="tab-item__title">Fishnet Chair</div>
-								<div class="tab-item__details">Seat and back with upholstery
-									<br>made of cold cure foam </div>
 							</div>
 						</div>
 					</div>
-					<div class="tab-item">
-						<img src="img/product-3.jpg" class="tab-item__img" />
-						<div class="tab-item__hover">
-							<div class="tab-item__back">
-								<div class="tab-item__btn">
-									<a role="button" class="btn btn--icon">
-										<svg width="35" height="35" class="btn__icon"><use xlink:href="assets/images/icon.svg#icon_cheveron-right" class="svg-icon-search"></use></svg>
-									</a>
+					<div class="tab-item col-md-6 col-xl-3">
+						<div class="tab-item__img-container">
+							<img src="img/product-3.jpg" class="tab-item__img img-fluid" />
+							<div class="tab-item__hover">
+								<div class="tab-item__back">
+									<div class="tab-item__btn">
+										<a role="button" class="btn btn--icon">
+											<svg width="35" height="35" class="btn__icon"><use xlink:href="assets/images/icon.svg#icon_cheveron-right" class="svg-icon-search"></use></svg>
+										</a>
+									</div>
+									<div class="tab-item__title">Fishnet Chair</div>
+									<div class="tab-item__details">Seat and back with upholstery
+										<br>made of cold cure foam </div>
 								</div>
-								<div class="tab-item__title">Fishnet Chair</div>
-								<div class="tab-item__details">Seat and back with upholstery
-									<br>made of cold cure foam </div>
 							</div>
 						</div>
 					</div>
-					<div class="tab-item">
-						<img src="img/product-4.jpg" class="tab-item__img" />
-						<div class="tab-item__hover">
-							<div class="tab-item__back">
-								<div class="tab-item__btn">
-									<a role="button" class="btn btn--icon">
-										<svg width="35" height="35" class="btn__icon"><use xlink:href="assets/images/icon.svg#icon_cheveron-right" class="svg-icon-search"></use></svg>
-									</a>
+					<div class="tab-item col-md-6 col-xl-3">
+						<div class="tab-item__img-container">
+							<img src="img/product-4.jpg" class="tab-item__img img-fluid" />
+							<div class="tab-item__hover">
+								<div class="tab-item__back">
+									<div class="tab-item__btn">
+										<a role="button" class="btn btn--icon">
+											<svg width="35" height="35" class="btn__icon"><use xlink:href="assets/images/icon.svg#icon_cheveron-right" class="svg-icon-search"></use></svg>
+										</a>
+									</div>
+									<div class="tab-item__title">Fishnet Chair</div>
+									<div class="tab-item__details">Seat and back with upholstery
+										<br>made of cold cure foam </div>
 								</div>
-								<div class="tab-item__title">Fishnet Chair</div>
-								<div class="tab-item__details">Seat and back with upholstery
-									<br>made of cold cure foam </div>
 							</div>
 						</div>
 					</div>
@@ -164,78 +180,84 @@
 			</div>
 		</div>
 	</div>
-	<div class="container">
-		<div class="promo-product">
-			<div class="promo-product__item">
-				<img src="img/promo-img1.jpg" alt="" class="promo-product__img" />
-				<div class="promo-product__text">
-					<div class="promo-product__tag">exclusive</div>
-					<div class="promo-product__title">Fishnet Chair</div>
-					<div class="promo-product__details">Seat and back with upholstery made of cold cure foam.
-						<br>Steel frame, available in matt</div>
-					<div class="promo-product__btn">
-						<a role="button" class="btn">Order Us
-							<svg width="23" height="23" class="btn__icon"><use xlink:href="assets/images/icon.svg#icon_chevron-right" class="svg-icon-search"></use></svg>
-						</a>
+	<div class="container no-paddings">
+		<div class="promo-product row no-gutters">
+			<div class="promo-product__item col-md-6">
+				<img src="img/promo-img1.jpg" alt="" class="promo-product__img img-fluid" />
+				<div class="promo-product__text-container">
+					<div class="promo-product__text">
+						<div class="promo-product__tag">exclusive</div>
+						<div class="promo-product__title">Fishnet Chair</div>
+						<div class="promo-product__details">Seat and back with upholstery made of cold cure foam.
+							<br>Steel frame, available in matt</div>
+						<div class="promo-product__btn">
+							<a role="button" class="btn">Order Us
+								<svg width="23" height="23" class="btn__icon"><use xlink:href="assets/images/icon.svg#icon_chevron-right" class="svg-icon-search"></use></svg>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="promo-product__item">
-				<img src="img/promo-img2.jpg" alt="" class="promo-product__img" />
-				<div class="promo-product__text">
-					<div class="promo-product__tag">exclusive</div>
-					<div class="promo-product__title">Fishnet Chair</div>
-					<div class="promo-product__details">Seat and back with upholstery made of cold cure foam.
-						<br>Steel frame, available in matt</div>
-					<div class="promo-product__btn">
-						<a role="button" class="btn">Order Us
-							<svg width="23" height="23" class="btn__icon"><use xlink:href="assets/images/icon.svg#icon_chevron-right" class="svg-icon-search"></use></svg>
-						</a>
+			<div class="promo-product__item col-md-6">
+				<img src="img/promo-img2.jpg" alt="" class="promo-product__img img-fluid" />
+				<div class="promo-product__text-container">
+					<div class="promo-product__text">
+						<div class="promo-product__tag">exclusive</div>
+						<div class="promo-product__title">Fishnet Chair</div>
+						<div class="promo-product__details">Seat and back with upholstery made of cold cure foam.
+							<br>Steel frame, available in matt</div>
+						<div class="promo-product__btn">
+							<a role="button" class="btn">Order Us
+								<svg width="23" height="23" class="btn__icon"><use xlink:href="assets/images/icon.svg#icon_chevron-right" class="svg-icon-search"></use></svg>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="container">
-		<div class="trending-products">
-			<div class="trending-products__header">
-				<div class="trending-products__title">Trending Products</div>
-				<div class="trending-products__btn-ghost">
-					<a role="button" class="btn btn--link">explore all
-						<svg width="23" height="23" class="btn__icon"><use xlink:href="assets/images/icon.svg#icon_chevron-right" class="svg-icon-search"></use></svg>
-					</a>
+		<div class="section-container">
+			<div class="trending-products">
+				<div class="trending-products__header">
+					<div class="trending-products__title">Trending Products</div>
+					<div class="trending-products__btn-ghost">
+						<a role="button" class="btn btn--link">explore all
+							<svg width="23" height="23" class="btn__icon"><use xlink:href="assets/images/icon.svg#icon_chevron-right" class="svg-icon-search"></use></svg>
+						</a>
+					</div>
 				</div>
-			</div>
-			<div class="trending-products__container">
-				<div class="trending-products__item">
-					<a href="#" class="trending-products__link">
-						<img src="img/product-11.jpg" class="trending-products__img" />
-					</a>
-				</div>
-				<div class="trending-products__item">
-					<a href="#" class="trending-products__link">
-						<img src="img/product-21.jpg" class="trending-products__img" />
-					</a>
-				</div>
-				<div class="trending-products__item">
-					<a href="#" class="trending-products__link">
-						<img src="img/product-31.jpg" class="trending-products__img" />
-					</a>
-				</div>
-				<div class="trending-products__item">
-					<a href="#" class="trending-products__link">
-						<img src="img/product-41.jpg" class="trending-products__img" />
-					</a>
-				</div>
-				<div class="trending-products__item">
-					<a href="#" class="trending-products__link">
-						<img src="img/product-5.jpg" class="trending-products__img" />
-					</a>
-				</div>
-				<div class="trending-products__item">
-					<a href="#" class="trending-products__link">
-						<img src="img/product-6.jpg" class="trending-products__img" />
-					</a>
+				<div class="trending-products__container row">
+					<div class="trending-products__item col-sm-4 col-6">
+						<a href="#" class="trending-products__link">
+							<img src="img/product-11.jpg" class="trending-products__img img-fluid" />
+						</a>
+					</div>
+					<div class="trending-products__item col-sm-4 col-6">
+						<a href="#" class="trending-products__link">
+							<img src="img/product-21.jpg" class="trending-products__img img-fluid" />
+						</a>
+					</div>
+					<div class="trending-products__item col-sm-4 col-6">
+						<a href="#" class="trending-products__link">
+							<img src="img/product-31.jpg" class="trending-products__img img-fluid" />
+						</a>
+					</div>
+					<div class="trending-products__item col-sm-4 col-6">
+						<a href="#" class="trending-products__link">
+							<img src="img/product-41.jpg" class="trending-products__img img-fluid" />
+						</a>
+					</div>
+					<div class="trending-products__item col-sm-4 col-6">
+						<a href="#" class="trending-products__link">
+							<img src="img/product-5.jpg" class="trending-products__img img-fluid" />
+						</a>
+					</div>
+					<div class="trending-products__item col-sm-4 col-6">
+						<a href="#" class="trending-products__link">
+							<img src="img/product-6.jpg" class="trending-products__img img-fluid" />
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -243,16 +265,20 @@
 	<div class="container">
 		<div class="hot-deal">
 			<div class="hot-deal__slides">
-				<div class="hot-deal__slide slide">
-					<img src="img/slider-img2.jpg" class="slide__img" />
-					<div class="slide__text">
-						<div class="slide__tag">Hot Deal</div>
-						<div class="slide__title">Fishnet Chair</div>
-						<div class="slide__details">Seat and back with upholstery made of cold cure foam. Steel frame,
-							<br>available in matt powder-coated black</div>
-						<a role="button" class="btn">Order Us
-							<svg width="23" height="23" class="btn__icon"><use xlink:href="assets/images/icon.svg#icon_chevron-right" class="svg-icon-search"></use></svg>
-						</a>
+				<div class="hot-deal__slide slide row">
+					<div style="background-image: url(img/slider-img2.jpg);" class="slide__img-container">
+						<img src="img/slider-img2.jpg" class="slide__img img-fluid" />
+					</div>
+					<div class="slide__text col-md-12">
+						<div class="section-container">
+							<div class="slide__tag">Hot Deal</div>
+							<div class="slide__title">Fishnet Chair</div>
+							<div class="slide__details">Seat and back with upholstery made of cold cure foam. Steel frame,
+								<br>available in matt powder-coated black</div>
+							<a role="button" class="btn">Order Us
+								<svg width="23" height="23" class="btn__icon"><use xlink:href="assets/images/icon.svg#icon_chevron-right" class="svg-icon-search"></use></svg>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -270,133 +296,155 @@
 		</div>
 	</div>
 	<div class="container">
-		<div class="exclusive-product">
-			<div class="exclusive-product__item-50">
-				<img src="img/product-1-lg.jpg" alt="" class="exclusive-product__img" />
-				<div class="exclusive-product__text">
-					<div class="exclusive-product__tag">exclusive</div>
-					<div class="exclusive-product__title">Fishnet Chair</div>
-					<div class="exclusive-product__details">Seat and back with upholstery made of cold cure
-						<br> foam.Steel frame, available in matt</div>
-					<div class="exclusive-product__btn">
-						<a role="button" class="btn">Order Us
-							<svg width="23" height="23" class="btn__icon"><use xlink:href="assets/images/icon.svg#icon_chevron-right" class="svg-icon-search"></use></svg>
-						</a>
+		<div class="section-container">
+			<div class="exclusive-product row justify-content-center">
+				<div class="col-sm-auto col-xl-6 col-lg-6">
+					<div class="exclusive-product__item">
+						<div class="exclusive-product__img-container">
+							<img src="img/product-1-lg.jpg" alt="" class="exclusive-product__img img-fluid" />
+						</div>
+						<div class="exclusive-product__text">
+							<div class="exclusive-product__tag">exclusive</div>
+							<div class="exclusive-product__title">Fishnet Chair</div>
+							<div class="exclusive-product__details">Seat and back with upholstery made of cold cure
+								<br> foam.Steel frame, available in matt</div>
+							<div class="exclusive-product__btn">
+								<a role="button" class="btn">Order Us
+									<svg width="23" height="23" class="btn__icon"><use xlink:href="assets/images/icon.svg#icon_chevron-right" class="svg-icon-search"></use></svg>
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="exclusive-product__container">
-				<div class="exclusive-product__item-25">
-					<a href="#" class="exclusive-product__link">
-						<img src="img/product-2-sm.jpg" alt="" class="exclusive-product__img" />
-					</a>
-				</div>
-				<div class="exclusive-product__item-25">
-					<a href="#" class="exclusive-product__link">
-						<img src="img/product-3-sm.jpg" alt="" class="exclusive-product__img" />
-					</a>
-				</div>
-				<div class="exclusive-product__item-25">
-					<a href="#" class="exclusive-product__link">
-						<img src="img/product-4-sm.jpg" alt="" class="exclusive-product__img" />
-					</a>
-				</div>
-				<div class="exclusive-product__item-25">
-					<a href="#" class="exclusive-product__link">
-						<img src="img/product-5-sm.jpg" alt="" class="exclusive-product__img" />
-					</a>
+				<div class="col-lg-6 col-xl-6">
+					<div class="row justify-content-center">
+						<div class="exclusive-product__item exclusive-product__item--hover col-6 col-lg-6 col-md-auto">
+							<a href="#" class="exclusive-product__link">
+								<img src="img/product-2-sm.jpg" alt="" class="exclusive-product__img img-fluid" />
+							</a>
+						</div>
+						<div class="exclusive-product__item exclusive-product__item--hover col-6 col-lg-6 col-md-auto">
+							<a href="#" class="exclusive-product__link">
+								<img src="img/product-3-sm.jpg" alt="" class="exclusive-product__img img-fluid" />
+							</a>
+						</div>
+						<div class="exclusive-product__item exclusive-product__item--hover col-6 col-lg-6 col-md-auto">
+							<a href="#" class="exclusive-product__link">
+								<img src="img/product-4-sm.jpg" alt="" class="exclusive-product__img img-fluid" />
+							</a>
+						</div>
+						<div class="exclusive-product__item exclusive-product__item--hover col-6 col-lg-6 col-md-auto">
+							<a href="#" class="exclusive-product__link">
+								<img src="img/product-5-sm.jpg" alt="" class="exclusive-product__img img-fluid" />
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="container">
 		<div class="mobile-app">
-			<img src="img/mobile-app.jpg" class="mobile-app__img" />
-			<div class="mobile-app__text">
-				<div class="mobile-app__tag">mobile app</div>
-				<div class="mobile-app__title">Find. Follow.
-					<br> Favorite.</div>
-				<div class="mobile-app__details">Save your favorites and share your style.</div>
-				<a href="#" class="mobile-app__link">
-					<img src="img/app-store.png" class="mobile-app__link-img" />
-				</a>
-				<a href="#" class="mobile-app__link">
-					<img src="img/google-play.png" class="mobile-app__link-img" />
-				</a>
+			<div class="row">
+				<div style="background-image: url(img/mobile-app.jpg);" class="mobile-app__img-container">
+					<img src="img/mobile-app.jpg" class="mobile-app__img img-fluid" />
+				</div>
+				<div class="mobile-app__text">
+					<div class="section-container">
+						<div class="col-12">
+							<div class="mobile-app__tag">mobile app</div>
+							<div class="mobile-app__title">Find. Follow.
+								<br> Favorite.</div>
+							<div class="mobile-app__details">Save your favorites and share your style.</div>
+							<a href="#" class="mobile-app__link">
+								<img src="img/app-store.png" class="mobile-app__link-img" />
+							</a>
+							<a href="#" class="mobile-app__link">
+								<img src="img/google-play.png" class="mobile-app__link-img" />
+							</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="container">
-		<div class="footer">
-			<div class="footer__row">
-				<div class="footer__col footer__col-3">
-					<div class="footer__title">contact us</div>
-					<div class="footer__p">132A Bridge Road Richmond VIC
-						<br> Australia.</div>
-					<div class="footer__p">Talk to us on 1300 132
-						<br> info@interior.com</div>
-				</div>
-				<div class="footer__col footer__col-5">
-					<div class="footer__title">useful information</div>
-					<div class="footer__row">
-						<ul class="footer__list">
-							<li class="footer__list-el">
-								<a href="#" class="footer__list-link">sales terms</a>
-							</li>
-							<li class="footer__list-el">
-								<a href="#" class="footer__list-link">customer care</a>
-							</li>
-							<li class="footer__list-el">
-								<a href="#" class="footer__list-link">delivery</a>
-							</li>
-						</ul>
-						<ul class="footer__list">
-							<li class="footer__list-el">
-								<a href="#" class="footer__list-link">architect account </a>
-							</li>
-							<li class="footer__list-el">
-								<a href="#" class="footer__list-link">careers</a>
-							</li>
-							<li class="footer__list-el">
-								<a href="#" class="footer__list-link">exchanges & returns </a>
-							</li>
-						</ul>
+	<div class="footer">
+		<div class="container footer__background">
+			<div class="section-container">
+				<div class="row">
+					<div class="col-lg-3">
+						<div class="footer__title">contact us</div>
+						<div class="footer__p">132A Bridge Road Richmond VIC
+							<br> Australia.</div>
+						<div class="footer__p">Talk to us on 1300 132
+							<br> info@interior.com</div>
+					</div>
+					<div class="col-lg-5">
+						<div class="footer__title">useful information</div>
+						<div class="row">
+							<div class="col-lg-6">
+								<ul class="footer__list">
+									<li class="footer__list-el">
+										<a href="#" class="footer__list-link">sales terms</a>
+									</li>
+									<li class="footer__list-el">
+										<a href="#" class="footer__list-link">customer care</a>
+									</li>
+									<li class="footer__list-el">
+										<a href="#" class="footer__list-link">delivery</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-lg-6">
+								<ul class="footer__list footer__no-left-padding">
+									<li class="footer__list-el">
+										<a href="#" class="footer__list-link">architect account </a>
+									</li>
+									<li class="footer__list-el">
+										<a href="#" class="footer__list-link">careers</a>
+									</li>
+									<li class="footer__list-el">
+										<a href="#" class="footer__list-link">exchanges & returns </a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="footer__title">let's stay in touch!</div>
+						<div class="footer__p">Suscribe to know about our latest news, products and
+							<br>special offers just for suscribers.</div>
+						<div class="footer__subscribe">
+							<input type="text" placeholder="your email address" class="footer__input" />
+							<a href="#" class="footer__send">
+								<svg width="22" height="22"><use xlink:href="assets/images/icon.svg#icon_paper-plane" class="svg-icon-plane"></use></svg>
+							</a>
+						</div>
 					</div>
 				</div>
-				<div class="footer__col footer__col-4">
-					<div class="footer__title">let's stay in touch!</div>
-					<div class="footer__p">Suscribe to know about our latest news, products and
-						<br>special offers just for suscribers.</div>
-					<div class="footer__subscribe">
-						<input type="text" placeholder="your email address" class="footer__input" />
-						<a href="#" class="footer__send">
-							<svg width="22" height="22"><use xlink:href="assets/images/icon.svg#icon_paper-plane" class="svg-icon-plane"></use></svg>
-						</a>
+				<div class="row footer__common">
+					<div class="col-lg-4">
+						<div class="footer__copy">© Copyright - INTERIOR 2016. All Rights Reserved.</div>
 					</div>
-				</div>
-			</div>
-			<div class="footer__row footer__common">
-				<div class="footer__col footer__col-4">
-					<div class="footer__copy">© Copyright - INTERIOR 2016. All Rights Reserved.</div>
-				</div>
-				<div class="footer__col footer__col-4">
-					<div class="footer__social">
-						<a href="#" class="footer__social-icon">
-							<svg width="14" height="14"><use xlink:href="assets/images/icon.svg#icon_facebook" class="svg-icon-social"></use></svg>
-						</a>
-						<a href="#" class="footer__social-icon">
-							<svg width="14" height="14"><use xlink:href="assets/images/icon.svg#icon_twitter" class="svg-icon-social"></use></svg>
-						</a>
-						<a href="#" class="footer__social-icon">
-							<svg width="14" height="14"><use xlink:href="assets/images/icon.svg#icon_google" class="svg-icon-social"></use></svg>
-						</a>
-						<a href="#" class="footer__social-icon">
-							<svg width="14" height="14"><use xlink:href="assets/images/icon.svg#icon_pinterest-p" class="svg-icon-social"></use></svg>
-						</a>
+					<div class="col-lg-4">
+						<div class="footer__social">
+							<a href="#" class="footer__social-icon">
+								<svg width="14" height="14"><use xlink:href="assets/images/icon.svg#icon_facebook" class="svg-icon-social"></use></svg>
+							</a>
+							<a href="#" class="footer__social-icon">
+								<svg width="14" height="14"><use xlink:href="assets/images/icon.svg#icon_twitter" class="svg-icon-social"></use></svg>
+							</a>
+							<a href="#" class="footer__social-icon">
+								<svg width="14" height="14"><use xlink:href="assets/images/icon.svg#icon_google" class="svg-icon-social"></use></svg>
+							</a>
+							<a href="#" class="footer__social-icon">
+								<svg width="14" height="14"><use xlink:href="assets/images/icon.svg#icon_pinterest-p" class="svg-icon-social"></use></svg>
+							</a>
+						</div>
 					</div>
-				</div>
-				<div class="footer__col footer__col-4 footer__terms-block">
-					<a href="#" class="footer__terms">Terms & Conditions / Privacy policy & Cookies </a>
+					<div class="col-lg-4 footer__terms-block">
+						<a href="#" class="footer__terms">Terms & Conditions / Privacy policy & Cookies </a>
+					</div>
 				</div>
 			</div>
 		</div>
